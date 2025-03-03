@@ -1,0 +1,66 @@
+.body 
+{ 
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #5d02f9, #fad0c4); 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.form
+{
+     margin-bottom: 20px;
+}
+
+.contenedor {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.formulario
+{
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(246, 20, 20, 0.2);
+}
+.titulo
+{
+    padding: 0;
+    background: blue;
+}
+.button, input
+{
+    border-radius: 20px;
+    border: 1px solid #2d9fd9;
+    color: #a0d18c;
+} 
+
+.button1
+{
+    border-radius: 12px;
+}
+
+button:hover
+{
+    background: #ff8000;
+}
+
+
+
+
+
+
+
+.ul
+{
+   list-style-type: none; padding: 0;
+}
+
+.listaResultado
+{ 
+    margin-top: 20px; font-weight: bold;
+}

@@ -1,0 +1,287 @@
+/*
+Nombre del Codigo : styles.css
+Autor             : Ivan Ayala Ayala
+Fecha             : 03-02-2025
+                    14-02-2025
+                    28-02-2025
+
+Objetivo          : Dar caracteristicas de diseño a index.html
+*/
+
+
+
+/*
+selecciona el elemento raíz de un árbol que representa el documento. En HTML, 
+:root representa el elemento <html> y es idéntico al selector html
+
+pseudo-clase :root se definen los colores a usar en diferentes instancias del html
+*/
+
+:root 
+{
+    --color-primary: #f39ac3;
+    --color-secondary: #b8dcf5;
+    --color-tertiary: #5405f0;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #ff0909;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+}
+
+/*El asterisco '*' representa a cualquier elemento del DOM(modelo de objeto de documento).
+Al ser utilizado como selector CSS aplicará a cualquier elemento 
+contenido en el documento.  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Caracterisitcas para etiqueta <body> del html */
+body 
+{
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Caracteristicas generales para type button*/
+button 
+{
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+
+/* Caracteristicas Generales para aparatdos lista del html
+ ejemplo
+  <ul id="listaMisAmigos"></ul>
+*/
+ul 
+{
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+
+
+
+/* caracteriticas generales para los input type=text
+Ejemplo
+<input type="text" id="amigo" class="amigo" placeholder="Nombre de Amigo">
+*/
+.input-title 
+{
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 
+caracteristicas para este apartado del html
+ <main class="principal-pagina">
+*/
+.principal-pagina
+ {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* 
+caracteristicas para este apartado del html
+ <header class="encabezado-titulo">
+*/
+.encabezado-titulo
+ {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+/* 
+caracteristicas para este apartado del html
+ <h1 class="titulo-principal">Juego Amigo Secreto</h1>
+*/
+.titulo-principal 
+{
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-black);
+}
+
+/* 
+caracteristicas para este apartado del html
+ <section class="entrada-de-datos">
+*/
+.entrada-de-datos 
+{
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* 
+caracteristicas para este apartado del html
+ <h2 class="titulo-de-ingresar-datos">
+*/
+.titulo-de-ingresar-datos 
+{
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-black);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* 
+caracteristicas para este apartado del html
+  <div class="ingresar-amigo">
+*/
+.ingresar-amigo 
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* 
+caracteristicas para este apartado del html
+   <input type="text" id="amigo" class="amigo" placeholder="Nombre de Amigo">
+*/
+.amigo 
+{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+/* 
+caracteristicas especificas para el button
+   <button class="button-misAmigos" onclick="misAmigos()">Mi Amigo Llego</button>
+*/
+.button-misAmigos 
+{
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+/* 
+caracteristicas especificas para el button...es cuando se posiciona en el ..cuando interactua 
+   <button class="button-misAmigos" onclick="misAmigos()">Mi Amigo Llego</button>
+*/
+.button-misAmigos:hover 
+{
+    background-color: #a1a1a1;
+}
+
+
+
+/* 
+caracteristicas para este apartado del html
+ <p id="amigoElegido" class="amigos-a-mostrar" hidden = true>Amigo Elegido:</p>  
+*/
+.amigos-a-mostrar
+ {
+    margin-top: 15px;
+    color: #f40505;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 
+caracteristicas para este apartado del html
+   <div class="entrada-de-eleccion-amigo">
+*/
+.entrada-de-eleccion-amigo
+ {
+    width: 300px;
+    justify-content: center;
+}
+
+
+/* 
+caracteristicas especificas para el button
+  <button class="button-elegirMiAmigo" onclick="elegirMiAmigo()">
+*/
+.button-elegirMiAmigo
+{
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+   
+}
+
+/* 
+caracteristicas especificas para el button...es cuando se posiciona en el ..cuando interactua 
+  <button class="button-elegirMiAmigo" onclick="elegirMiAmigo()">
+*/
+.button-elegirMiAmigo:hover
+{ 
+    background-color: #a1a1a1;
+}
+
+/* Caracteristicas especiales para el 
+button .elegirMiAmigo
+<button class="button-elegirMiAmigo" onclick="elegirMiAmigo()">
+*/
+.elegirMiAmigo
+ {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white); 
+    background-color: var(--color-button); 
+    font-size: 16px;
+}
+
+/* Caracteristicas especiales para el 
+button .elegirMiAmigo  en este caso el icono/imagen que va en el
+<button class="button-elegirMiAmigo" onclick="elegirMiAmigo()"> */
+.elegirMiAmigo img 
+{
+    margin-right: 40px;
+}
+
+/* Caracteristicas especiales para el 
+button .elegirMiAmigo  ..en este caso es cuando se posiciona en el ..cuando interactua
+<button class="button-elegirMiAmigo" onclick="elegirMiAmigo()"> */
+.elegirMiAmigo:hover
+{
+    background-color: var(--color-button-hover);
+}

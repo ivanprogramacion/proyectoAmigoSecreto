@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Amigo Secreto</h2>
+        <input type="text" id="nameInput" placeholder="Agregar nombre">
+        <button onclick="addName()">Agregar</button>
+        <ul id="nameList">
+            <button onclick="removeName()">Eliminar</button>
+        </ul>
+        <button onclick="drawNames()">Realizar Sorteo</button>
+        <button onclick="resetDraw()">Reiniciar Sorteo</button>
+        <h3>Resultados</h3>
+        <ul id="resultList"></ul>
+        <h3>Eliminar Participante</h3>
+        <input type="text" id="removeNameInput" placeholder="Nombre a eliminar">
+        <button onclick="removeName()">Eliminar</button>
+
+        <h3>Actualizar Participante</h3>
+        <input type="text" id="oldNameInput" placeholder="Nombre actual">
+        <input type="text" id="newNameInput" placeholder="Nuevo nombre">
+        <button onclick="updateName()">Actualizar</button>
+
+    </div>
+</body>
+</html>

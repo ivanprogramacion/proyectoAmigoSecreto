@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+
+<!--
+Nombre del Codigo : index.html
+Autor             : Ivan Ayala Ayala
+Fecha             : 02-02-2025
+                    10-02-2025
+                    24-02-2025
+
+Objetivo          : Vista del html para codigo amigo secreto
+-->
+
+<!--
+Determinar el lenguaje del html <html lang="es">
+Determinar el juego de caracteres del html  <meta charset="UTF-8">, por ejemplo usar emojis
+Optimizacion para dispositivo moviles  <meta name="viewport" 
+-->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">     <!-- invocar/usar codigo .css-->
+       <title>Amigo Secreto</title>               <!-- Titulo principal de la pagina-->
+</head>
+
+<body>                                   <!--Cuerpo del html-->
+    <main class="principal-pagina">      <!-- Contenedor principal -->
+        <header class="encabezado-titulo"> <!-- titulo principal del cuerpo del body-->
+            <h1 class="titulo-principal">Juego Amigo Secreto</h1>
+            <img src="assets/amigosecretomio.png" alt="imagenbebeamigo"> <!--presentar imagen-->
+        </header>
+        
+        <section class="entrada-de-datos">  <!-- section para el ingreso de la informacion-->
+            <h2 class="titulo-de-ingresar-datos">Digite el nombre de amigos.</h2>
+            <div class="ingresar-amigo">
+                <input type="text" id="amigo" class="amigo" placeholder="Nombre de Amigo">
+                             <!-- Fundamental input es para ingresar informacion variable en html-->
+                <button class="button-misAmigos" onclick="misAmigos()">Mi Amigo Llego</button>
+            </div>
+           
+            <ul id="listaMisAmigos"></ul>   <!--Aqui se mostraran los amigos  en una lista-->
+            <p id="amigoElegido" class="amigos-a-mostrar" hidden = true>Amigo Elegido:</p>
+            <ul id="amigoObtenido" class="amigos-a-mostrar" aria-live="polite"></ul>
+
+            <div class="entrada-de-eleccion-amigo"> <!--Aqui se muestra el amigo elegido-->
+                <button class="button-elegirMiAmigo" onclick="elegirMiAmigo()">
+                    <img src="assets/playmio.png" alt="imagenplaymio">
+                    Sortear amigo
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>  <!-- invoca/llama/usar codigo javascript-->
+</body>
+</html>
