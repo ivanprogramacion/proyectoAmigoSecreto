@@ -26,4 +26,5 @@ Software utilizado:
 Codigo:
      Vistas: HTML
      Diseño: CSS
-     Códido: JavaScript
+     Lenguajde Programacion: JavaScript
+     
