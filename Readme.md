@@ -11,7 +11,7 @@ Etapa UNO...
   se crea, se codifica version uno del proyecto, carpeta versionuno
 
 Etapa Dos
-  se crea, se codifica version uno del proyecto, carpeta versiondos
+  se crea, se codifica version dos del proyecto, carpeta versiondos
 
 En ambas situaciones se uso como base, el juego de numero secreto implementado en modulos anteriores y 
 se pidió ayuda/guía a  IA, como por ejemplo DeepSeek y Qween.
