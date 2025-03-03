@@ -13,14 +13,14 @@ Etapa UNO...
 Etapa Dos
   se crea, se codifica version uno del proyecto, carpeta versiondos
 
-En ambas situaciones se uso como base, el jeugo de numero secreto implenetando en modluso anteriores y 
+En ambas situaciones se uso como base, el juego de numero secreto implementado en modulos anteriores y 
 se pidió ayuda/guía a  IA, como por ejemplo DeepSeek y Qween.
 
 Etapa Tres
   se crea, se codifica version final del proyecto, carepta versionMia
 
 Software utilizado:
-     Navegador WEB, en este caso BARVE, pero puede ser usado cualquier otro
+     Navegador WEB, en este caso BRAVE, pero puede ser usado cualquier otro
      Editor: Visual Studio Code
 
 Codigo:
